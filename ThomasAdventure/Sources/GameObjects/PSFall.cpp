@@ -1,0 +1,26 @@
+#include "PSFall.h"
+
+PSFall::PSFall(IPlayer* player)
+{
+	m_Player = player;
+}
+
+void PSFall::Init()
+{
+	m_Animation = new Animation(*DATA->getTexture("Character/Fall"), sf::Vector2i(2, 1), 0.1f);
+	// m_Animation->setModeEndFrame(true);
+}
+
+void PSFall::Update(float deltaTime)
+{
+	m_Animation->Update(deltaTime);
+}
+
+void PSFall::Render(sf::RenderWindow* window)
+{
+	window->draw(*m_Animation);
+}
+
+void PSFall::Reset()
+{
+}

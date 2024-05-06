@@ -4,6 +4,7 @@
 #include <string>
 #include "../GameObjects/GameButton.h"
 #include "../GameConfig.h"
+#include "../GameObjects/Animation.h"
 
 #define DATA ResourceManager::GetInstance()
 

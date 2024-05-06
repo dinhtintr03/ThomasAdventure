@@ -25,6 +25,9 @@
     <Filter Include="Source Files\ParallelBackground">
       <UniqueIdentifier>{2930a3fa-6663-4c3a-a476-76bf55458fac}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Player">
+      <UniqueIdentifier>{efb5a8f6-d755-4164-881c-83a25f50f26a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ThomasAdventure.cpp">
@@ -77,6 +80,24 @@
     </ClCompile>
     <ClCompile Include="Sources\GameObjects\ParallelBackground.cpp">
       <Filter>Source Files\ParallelBackground</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\GameObjects\Player.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\GameObjects\PSRun.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\GameObjects\PSJump.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\GameObjects\PSFall.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\GameObjects\PSDeath.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\GameObjects\PSAttack.cpp">
+      <Filter>Source Files\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +154,30 @@
     </ClInclude>
     <ClInclude Include="Sources\GameObjects\ParallelBackground.h">
       <Filter>Source Files\ParallelBackground</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\IPlayer.h">
+      <Filter>Source Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\IPState.h">
+      <Filter>Source Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\Player.h">
+      <Filter>Source Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\PSRun.h">
+      <Filter>Source Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\PSJump.h">
+      <Filter>Source Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\PSFall.h">
+      <Filter>Source Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\PSDeath.h">
+      <Filter>Source Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\PSAttack.h">
+      <Filter>Source Files\Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
