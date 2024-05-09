@@ -138,6 +138,7 @@
     <ClCompile Include="Sources\GameManager\WindowConnector.cpp" />
     <ClCompile Include="Sources\GameObjects\Animation.cpp" />
     <ClCompile Include="Sources\GameObjects\GameButton.cpp" />
+    <ClCompile Include="Sources\GameObjects\HitBox.cpp" />
     <ClCompile Include="Sources\GameObjects\Layer.cpp" />
     <ClCompile Include="Sources\GameObjects\ParallelBackground.cpp" />
     <ClCompile Include="Sources\GameObjects\Player.cpp" />
@@ -165,6 +166,7 @@
     <ClInclude Include="Sources\GameManager\WindowConnector.h" />
     <ClInclude Include="Sources\GameObjects\Animation.h" />
     <ClInclude Include="Sources\GameObjects\GameButton.h" />
+    <ClInclude Include="Sources\GameObjects\HitBox.h" />
     <ClInclude Include="Sources\GameObjects\IPlayer.h" />
     <ClInclude Include="Sources\GameObjects\IPState.h" />
     <ClInclude Include="Sources\GameObjects\Layer.h" />

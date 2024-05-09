@@ -12,10 +12,12 @@ void PSDeath::Init()
 
 void PSDeath::Update(float deltaTime)
 {
+	m_Animation->Update(deltaTime);
 }
 
 void PSDeath::Render(sf::RenderWindow* window)
 {
+	window->draw(*m_Animation);
 }
 
 void PSDeath::Reset()

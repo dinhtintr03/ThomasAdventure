@@ -22,11 +22,14 @@
     <Filter Include="Source Files\GameStateManager">
       <UniqueIdentifier>{860fd956-db29-48cc-8131-b3fa9ab1bcc3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\ParallelBackground">
+    <Filter Include="Source Files\GameObjects\ParallelBackground">
       <UniqueIdentifier>{2930a3fa-6663-4c3a-a476-76bf55458fac}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Player">
+    <Filter Include="Source Files\GameObjects\Player">
       <UniqueIdentifier>{efb5a8f6-d755-4164-881c-83a25f50f26a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObjects\Component">
+      <UniqueIdentifier>{6a193856-fc02-4ed8-8872-514cde01fb7a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -35,9 +38,6 @@
     </ClCompile>
     <ClCompile Include="Sources\Application.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Sources\GameObjects\Animation.cpp">
-      <Filter>Source Files\GameObjects</Filter>
     </ClCompile>
     <ClCompile Include="Sources\GameManager\ResourceManager.cpp">
       <Filter>Source Files\GameManager</Filter>
@@ -76,28 +76,34 @@
       <Filter>Source Files\GameStateManager</Filter>
     </ClCompile>
     <ClCompile Include="Sources\GameObjects\Layer.cpp">
-      <Filter>Source Files\ParallelBackground</Filter>
+      <Filter>Source Files\GameObjects\ParallelBackground</Filter>
     </ClCompile>
     <ClCompile Include="Sources\GameObjects\ParallelBackground.cpp">
-      <Filter>Source Files\ParallelBackground</Filter>
+      <Filter>Source Files\GameObjects\ParallelBackground</Filter>
     </ClCompile>
     <ClCompile Include="Sources\GameObjects\Player.cpp">
-      <Filter>Source Files\Player</Filter>
+      <Filter>Source Files\GameObjects\Player</Filter>
     </ClCompile>
     <ClCompile Include="Sources\GameObjects\PSRun.cpp">
-      <Filter>Source Files\Player</Filter>
+      <Filter>Source Files\GameObjects\Player</Filter>
     </ClCompile>
     <ClCompile Include="Sources\GameObjects\PSJump.cpp">
-      <Filter>Source Files\Player</Filter>
+      <Filter>Source Files\GameObjects\Player</Filter>
     </ClCompile>
     <ClCompile Include="Sources\GameObjects\PSFall.cpp">
-      <Filter>Source Files\Player</Filter>
+      <Filter>Source Files\GameObjects\Player</Filter>
     </ClCompile>
     <ClCompile Include="Sources\GameObjects\PSDeath.cpp">
-      <Filter>Source Files\Player</Filter>
+      <Filter>Source Files\GameObjects\Player</Filter>
     </ClCompile>
     <ClCompile Include="Sources\GameObjects\PSAttack.cpp">
-      <Filter>Source Files\Player</Filter>
+      <Filter>Source Files\GameObjects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\GameObjects\HitBox.cpp">
+      <Filter>Source Files\GameObjects\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\GameObjects\Animation.cpp">
+      <Filter>Source Files\GameObjects\Component</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -106,9 +112,6 @@
     </ClInclude>
     <ClInclude Include="Sources\GameConfig.h">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Sources\GameObjects\Animation.h">
-      <Filter>Source Files\GameObjects</Filter>
     </ClInclude>
     <ClInclude Include="Sources\GameManager\ResourceManager.h">
       <Filter>Source Files\GameManager</Filter>
@@ -153,31 +156,37 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Sources\GameObjects\ParallelBackground.h">
-      <Filter>Source Files\ParallelBackground</Filter>
+      <Filter>Source Files\GameObjects\ParallelBackground</Filter>
     </ClInclude>
     <ClInclude Include="Sources\GameObjects\IPlayer.h">
-      <Filter>Source Files\Player</Filter>
+      <Filter>Source Files\GameObjects\Player</Filter>
     </ClInclude>
     <ClInclude Include="Sources\GameObjects\IPState.h">
-      <Filter>Source Files\Player</Filter>
+      <Filter>Source Files\GameObjects\Player</Filter>
     </ClInclude>
     <ClInclude Include="Sources\GameObjects\Player.h">
-      <Filter>Source Files\Player</Filter>
+      <Filter>Source Files\GameObjects\Player</Filter>
     </ClInclude>
     <ClInclude Include="Sources\GameObjects\PSRun.h">
-      <Filter>Source Files\Player</Filter>
+      <Filter>Source Files\GameObjects\Player</Filter>
     </ClInclude>
     <ClInclude Include="Sources\GameObjects\PSJump.h">
-      <Filter>Source Files\Player</Filter>
+      <Filter>Source Files\GameObjects\Player</Filter>
     </ClInclude>
     <ClInclude Include="Sources\GameObjects\PSFall.h">
-      <Filter>Source Files\Player</Filter>
+      <Filter>Source Files\GameObjects\Player</Filter>
     </ClInclude>
     <ClInclude Include="Sources\GameObjects\PSDeath.h">
-      <Filter>Source Files\Player</Filter>
+      <Filter>Source Files\GameObjects\Player</Filter>
     </ClInclude>
     <ClInclude Include="Sources\GameObjects\PSAttack.h">
-      <Filter>Source Files\Player</Filter>
+      <Filter>Source Files\GameObjects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\HitBox.h">
+      <Filter>Source Files\GameObjects\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\Animation.h">
+      <Filter>Source Files\GameObjects\Component</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

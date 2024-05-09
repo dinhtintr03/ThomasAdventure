@@ -10,9 +10,9 @@ Player::Player()
 	m_nextState = IPState::SNULL;
 	m_runState = new PSRun(this);
 	m_jumpState = new PSJump(this);
-	m_fallState;
-	m_deathState;
-	m_attackState;
+	m_fallState = new PSFall(this);
+	m_deathState = new PSDeath(this);
+	m_attackState = new PSAttack(this);
 	m_currentState = m_runState;
 }
 
@@ -45,10 +45,14 @@ void Player::Init()
 {
 	m_runState->Init();
 	m_jumpState->Init();
-	/*
 	m_fallState->Init();
 	m_deathState->Init();
-	m_attackState->Init(); */
+	m_attackState->Init(); 
+
+	m_HitBox = new HitBox(sf::Vector2i(15, 30));
+	m_HitBox->setPosition(400, 400);
+	m_HitBox->Init(sf::Vector2f(200, 500));
+	m_HitBox->setTag(PLAYER);
 }
 
 void Player::Update(float deltaTime)
@@ -60,6 +64,11 @@ void Player::Update(float deltaTime)
 void Player::Render(sf::RenderWindow* window)
 {
 	m_currentState->Render(window);
+}
+
+HitBox* Player::getHitBox()
+{
+	return m_HitBox;
 }
 
 void Player::performStateChange()

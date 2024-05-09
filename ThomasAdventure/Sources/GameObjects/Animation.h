@@ -9,9 +9,9 @@ public:
 	void CalculateRectUV();
 	void ApplyRect();
 	virtual void Update(float dataTime);
-	
+	virtual void Reset();
 
-	
+	void setModeEndFrame(bool stop);
 
 	sf::Vector2i getFrameNum() { return m_frameNum; }
 	sf::Vector2i getCurrentFrame() { return m_currentFrame; }

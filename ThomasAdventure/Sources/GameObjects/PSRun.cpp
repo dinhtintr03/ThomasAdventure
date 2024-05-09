@@ -13,9 +13,19 @@ void PSRun::Init()
 void PSRun::Update(float deltaTime)
 {
 	m_Animation->Update(deltaTime);
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
 		m_Player->changeNextState(JUMP);
 	}
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
+		m_Player->getHitBox()->move(-m_Player->getHitBox()->getVelocity().x * deltaTime, 0);
+	}
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+		m_Player->getHitBox()->move(m_Player->getHitBox()->getVelocity().x * deltaTime, 0);
+	}
+
+	if (!m_Player->getHitBox()->isAlive()) m_Player->changeNextState(IPState::DEATH);
+
+	m_Animation->setPosition(m_Player->getHitBox()->getPosition());
 }
 
 void PSRun::Render(sf::RenderWindow* window)
