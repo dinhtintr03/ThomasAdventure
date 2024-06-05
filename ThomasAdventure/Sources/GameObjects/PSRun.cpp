@@ -35,4 +35,6 @@ void PSRun::Render(sf::RenderWindow* window)
 
 void PSRun::Reset()
 {
+
+	m_Animation->Reset();
 }

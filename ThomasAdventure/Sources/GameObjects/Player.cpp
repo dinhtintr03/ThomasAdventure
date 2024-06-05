@@ -50,9 +50,9 @@ void Player::Init()
 	m_attackState->Init(); 
 
 	m_HitBox = new HitBox(sf::Vector2i(15, 30));
-	m_HitBox->setPosition(400, 400);
+	m_HitBox->setPosition(400, groundY);
 	m_HitBox->Init(sf::Vector2f(200, 500));
-	m_HitBox->setTag(PLAYER);
+	m_HitBox->SetTag(PLAYER);
 }
 
 void Player::Update(float deltaTime)
@@ -64,6 +64,7 @@ void Player::Update(float deltaTime)
 void Player::Render(sf::RenderWindow* window)
 {
 	m_currentState->Render(window);
+	//window->draw(*m_HitBox);
 }
 
 HitBox* Player::getHitBox()
@@ -95,5 +96,6 @@ void Player::performStateChange()
 			break;
 		}
 		m_nextState = IPState::SNULL;
+		m_currentState->Reset();
 	}
 }

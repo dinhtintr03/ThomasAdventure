@@ -52,7 +52,7 @@ void GSHighScore::Init()
 	m_Title.setString("HIGH SCORE");
 	m_Title.setFont(*DATA->getFont("ARCADE"));
 	m_Title.setPosition(screenWidth / 2, screenHeight / 5);
-	/*
+	
 	//ListScore
 	for (int i = 0; i < ScoreManager::GetInstance()->getNum(); i++) {
 		sf::Text* t = new sf::Text();
@@ -61,7 +61,7 @@ void GSHighScore::Init()
 		t->setPosition(screenWidth / 2, screenHeight / 2 + 20 * i);
 		m_ListScore.push_back(t);
 	}
-	*/
+	
 }
 
 void GSHighScore::Update(float deltaTime)

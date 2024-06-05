@@ -32,7 +32,7 @@ void GSSetting::Init()
 	button->setOnClick([]() {GSM->PopState(); });
 	m_ListBtn.push_back(button);
 
-	/*
+
 	//turn on music
 	button = new GameButton();
 	button->Init("misic");
@@ -50,7 +50,7 @@ void GSSetting::Init()
 	button->setPosition(screenWidth / 2 - screenWidth / 4, screenHeight - screenHeight / 8);
 	button->setOnClick([]() {DATA->setAllowSound(false); });
 	m_ListBtn.push_back(button);
-	*/
+	
 	//Background
 	sf::Texture* texture = DATA->getTexture("Background layers/Background");
 	m_Background.setTexture(*texture);

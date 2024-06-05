@@ -19,7 +19,7 @@ public:
 	sf::Vector2f getVelocity();
 	void setVelocity(sf::Vector2f velocity);
 	TAG getTag() { return m_Tag; }
-	void setTag(TAG tag) { m_Tag = tag; }
+	void SetTag(TAG tag) { m_Tag = tag; }
 
 	bool isAlive() { return m_isAlive; }
 	void setAlive(bool alive) { m_isAlive = alive; }

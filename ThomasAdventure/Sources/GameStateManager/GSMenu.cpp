@@ -69,6 +69,8 @@ void GSMenu::Init()
 	m_Background.setTexture(*texture);
 	m_Background.setOrigin((sf::Vector2f)texture->getSize() / 2.f);
 	m_Background.setPosition(screenWidth / 2, screenHeight - texture->getSize().y / 2);
+
+	ScoreManager::GetInstance()->readFile();
 }
 
 void GSMenu::Update(float deltaTime)

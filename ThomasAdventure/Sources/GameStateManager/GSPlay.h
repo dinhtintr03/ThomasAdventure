@@ -2,7 +2,9 @@
 #include "GameStateBase.h"
 #include "../GameObjects/ParallelBackground.h"
 #include "../GameObjects/Player.h"
-
+#include "../GameObjects/CreepManager.h"
+#include "../GameObjects/CollisionManager.h"
+#include "../GameObjects/Boss.h"
 
 class GSPlay : public GameStateBase
 {
@@ -20,4 +22,11 @@ public:
 private:
 	ParallexBackground m_Background;
 	Player m_Player;
+	CollisionManager m_CollisionManager;
+	CreepManager m_CreepManager;
+	Boss m_Boss;
+
+	int m_currentScore;
+	float m_currentTime;
+	sf::Text m_Score;
 };

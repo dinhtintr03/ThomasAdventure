@@ -1,2 +1,9 @@
-﻿  PSJump.cpp
+﻿  ScoreManager.cpp
+  GSEnd.cpp
+D:\DataStructuresandAlgorithmsProject\ThomasAdventure\ThomasAdventure\ThomasAdventure\Sources\GameStateManager\GSEnd.cpp(58,57): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\DataStructuresandAlgorithmsProject\ThomasAdventure\ThomasAdventure\ThomasAdventure\Sources\GameStateManager\GSEnd.cpp(58,57): warning C4244:         with
+D:\DataStructuresandAlgorithmsProject\ThomasAdventure\ThomasAdventure\ThomasAdventure\Sources\GameStateManager\GSEnd.cpp(58,57): warning C4244:         [
+D:\DataStructuresandAlgorithmsProject\ThomasAdventure\ThomasAdventure\ThomasAdventure\Sources\GameStateManager\GSEnd.cpp(58,57): warning C4244:             T=unsigned int
+D:\DataStructuresandAlgorithmsProject\ThomasAdventure\ThomasAdventure\ThomasAdventure\Sources\GameStateManager\GSEnd.cpp(58,57): warning C4244:         ]
+  Generating Code...
   ThomasAdventure.vcxproj -> D:\DataStructuresandAlgorithmsProject\ThomasAdventure\ThomasAdventure\x64\Debug\ThomasAdventure.exe

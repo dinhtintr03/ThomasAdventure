@@ -24,6 +24,11 @@ void GSIntro::Resume()
 
 void GSIntro::Init()
 {
+	std::fstream input("texture.txt", std::ios::in);
+	std::string name;
+	getline(input, name);
+	DATA->addTexture(name);
+	input.close();
 	sf::Texture* texture = DATA->getTexture("Logo2");
 	m_Logo.setTexture(*texture);
 	m_Logo.setPosition(screenWidth / 2, screenHeight / 2);
